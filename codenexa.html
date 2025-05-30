@@ -1,0 +1,99 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { CalendarDays, GraduationCap, Github, Linkedin } from "lucide-react";
+
+export default function CodenexaHomePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-white p-6">
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold text-indigo-700">Codenexa</h1>
+        <p className="text-lg text-gray-700 mt-2">Choose One Skill. Get a Career Toolkit Free.</p>
+      </header>
+
+      <section className="grid md:grid-cols-2 gap-6">
+        <Card className="rounded-2xl shadow-lg p-4">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Choose Your Core Skill</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Python</li>
+              <li>C Programming</li>
+              <li>Java</li>
+              <li>Data Structures & Algorithms (DSA)</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow-lg p-4">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Free Career Toolkit</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>LinkedIn Profile Optimization</li>
+              <li>GitHub Setup & Profile Building</li>
+              <li>Resume Building Workshop</li>
+              <li>Internship Strategy Sessions</li>
+              <li>Weekly Expert Webinars</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-12 text-center">
+        <h2 className="text-3xl font-semibold text-indigo-700 mb-4">Weekly Webinars with Industry Experts</h2>
+        <p className="text-gray-600 mb-6">Hear directly from IITians, startup founders, and tech professionals every week.</p>
+      </section>
+
+      <section className="mt-12 grid md:grid-cols-3 gap-6">
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold text-indigo-600">Live Projects</h3>
+            <p className="text-gray-700 mt-2">Build real-world projects with mentorship and improve your portfolio.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold text-indigo-600">Mentorship Access</h3>
+            <p className="text-gray-700 mt-2">Connect with tech mentors for guidance, mock interviews, and personalized feedback.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold text-indigo-600">Internship Support</h3>
+            <p className="text-gray-700 mt-2">Get help in finding and applying to internships, including resume review and application tips.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-12 text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl font-semibold text-indigo-700 mb-4">Student Success Stories</h2>
+        <p className="text-gray-600 mb-6 italic">"Codenexa helped me land my first internship in just 2 months! The GitHub and resume sessions were game-changers." – Aayush, 1st Year CSE</p>
+        <p className="text-gray-600 italic">"The weekly webinars with IITians and tech mentors kept me motivated and ahead of the curve." – Priya, 2nd Year B.Tech</p>
+      </section>
+
+      <section className="text-center mt-12">
+        <h2 className="text-3xl font-semibold text-indigo-700 mb-4">Join Codenexa Now</h2>
+        <p className="text-gray-600 mb-6">Enroll in your favorite tech skill and get our complete career support package — absolutely free.</p>
+        <a
+          href="https://forms.gle/Ape6VQfRMUnPkSoeA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg px-6 py-2 rounded-full">
+            Enroll Today
+          </Button>
+        </a>
+      </section>
+
+      <footer className="mt-20 text-center text-gray-600">
+        <p className="mb-2">Connect with us:</p>
+        <div className="flex justify-center gap-4">
+          <Linkedin className="h-6 w-6" />
+          <Github className="h-6 w-6" />
+        </div>
+        <p className="mt-4 text-sm">© 2025 Codenexa. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
