@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Codenexa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1E1E2F;
+    }
+
+    nav {
+      background-color: #0F0F1A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 2rem;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      color: #00B4D8;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00B4D8;
+    }
+
+    header {
+      background-color: #12121A;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .about {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .glitter {
+      font-size: 2.8rem;
+      color: #00B4D8;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .glitter::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
+      animation: glitter 2s infinite;
+    }
+
+    @keyframes glitter {
+      0% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      color: #F9A826;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Codenexa</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="mentor.html">Mentors</a></li>
+      <li><a href="conatct.html">Contact Us</a></li>
+      <li><a href="enroll.html">Enroll Now</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>About Codenexa</h1>
+  </header>
+
+  <section class="about">
+    <h2 class="glitter">Who We Are</h2>
+    <p>At <span class="highlight">Codenexa</span>, we are passionate about transforming lives through practical and impactful tech education. Founded with a vision to bridge the gap between college learning and industry demands, we offer curated coding courses with added career-boosting skills.</p>
+    <p>In the year <span class="highlight">2025</span>, we proudly trained over <span class="highlight">50+ happy students</span> who successfully stepped into the world of tech with confidence and competence.</p>
+    <p>Our mission is to empower students not just with programming skills, but with the essential professional tools like resume building, LinkedIn branding, AI tools, and personalized career mentorship.</p>
+    <p>Join us and become part of a community that's building the future — one coder at a time.</p>
+  </section>
+</body>
+</html>
